@@ -195,6 +195,10 @@ This testing library has its own set of tests (hehe). You can use those as examp
 
     ./test.l
 
+or
+
+    make check
+
 # Reporters
 
 If you don't call `(report)`, the test results will not be printed to the screen.
