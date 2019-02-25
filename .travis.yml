@@ -7,3 +7,6 @@ services:
 
 before_install:
   - docker build -t aw/picolisp-unit .
+
+install:
+  - docker run aw/picolisp-unit /bin/sh -c "cd /tmp/picolisp-unit; make check"
