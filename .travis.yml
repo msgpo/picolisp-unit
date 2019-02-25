@@ -6,7 +6,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t aw/picolisp-unit .
+  - docker pull jidoteki/picolisp-unit
 
 install:
-  - docker run aw/picolisp-unit /bin/sh -c "cd /tmp/picolisp-unit; make check"
+  - docker run jidoteki/picolisp-unit /bin/sh -c "cd /tmp/picolisp-unit; make check"
