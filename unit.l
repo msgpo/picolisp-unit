@@ -84,7 +84,7 @@
 
 [de assert-kind-of (Type Value Message)
   (let Result
-    (cond ((flg? Value) 'Flags)
+    (cond ((flg? Value) 'Flag)
           ((str? Value) 'String)
           ((num? Value) 'Number)
           ((lst? Value) 'List)
