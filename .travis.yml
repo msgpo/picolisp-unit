@@ -7,7 +7,7 @@ services:
 
 before_install:
   - docker pull unscramble/picolisp-unit
-  - docker build --rm -t unscramble/picolisp-unit .
+  - docker build -t unscramble/picolisp-unit .
 
 install:
   - docker run unscramble/picolisp-unit /bin/sh -c "cd /tmp/picolisp-unit; make check"
