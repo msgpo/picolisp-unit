@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.1 (TBD)
+
+  * Add Makefile for testing the library
+  * Run tests in a Docker container
+  * Update supported PicoLisp version to 18.12
+
 ## 2.1.0 (2017-03-23)
 
   * Restore PicoLisp namespaces for backwards compatibility. Disable with PIL_NAMESPACES=false
