@@ -12,3 +12,7 @@ RUN cd /tmp/picoLisp/src64; make all clean && make
 RUN sudo mv /tmp/picoLisp /usr/lib/picolisp
 RUN sudo ln -s /usr/lib/picolisp/bin/picolisp /usr/bin
 RUN sudo ln -s /usr/lib/picolisp/bin/pil /usr/bin
+
+# Copy the files
+WORKDIR /tmp/picolisp-unit
+COPY . /tmp/picolisp-unit
